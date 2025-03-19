@@ -8,7 +8,7 @@ Considerations to bear in mind:
 - All scripts required a singularity image containing a specific tool to be run. They can be obtained by executing a singularity recipe or pulling an existing Docker container.
 - There is one specific script per analysis step and all of them should be sequentially run. With SLURM, it is possible to run them sequentially using the parameter --dependency when submitting a job to the HPC.
 
-## Pipeline 
+## General Pipeline and scripts structure 
 
 The scripts folder contains the folder bash scripts to complete this part of the analysis. There is one script per specific step in the pipeline, specifically:
 
@@ -23,7 +23,7 @@ The scripts folder contains the folder bash scripts to complete this part of the
 
 Importantly, there is a txt file 'RNAseq_User_defined_parameters.txt' that MUST be adapted for each RNAseq data analysis project. It basically contains the required data paths.
 
-## General scripts structure
+### Scripts structure
 
 All scripts follow the same structure with following sections:
 
@@ -32,7 +32,7 @@ All scripts follow the same structure with following sections:
 - Singularity image and tool parametrization. Definition of the singularity image to be used and the tools parameters to consider.
 - Execution. Execution of the corresponding tool using previous information.
 
-### Proposed methods section
+## Proposed methods section
 
 Following paragraph can be used in a methods section to explain RNA-seq data pre-processing analysis. Information can be adapted/customized in any case.
 
