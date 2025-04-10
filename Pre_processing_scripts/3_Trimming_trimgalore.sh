@@ -80,7 +80,7 @@ do
                                                   --stringency $STRINGENCY \
                                                   -q $MIN_QUAL \
                                                   --paired $RAWDATA'/'$BASENAME'_R1_001.fastq.gz' $RAWDATA'/'$BASENAME'_R2_001.fastq.gz'
-done > $WKD'/scripts/trimgalore_samples.cmd'
+done > $WKD'/scripts/cmds/trimgalore_samples.cmd'
 
 # Execute commant in batch array
 
