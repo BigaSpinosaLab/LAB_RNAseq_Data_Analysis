@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#SBATCH --job-name=PDOFetal_STAR
+#SBATCH --job-name=STAR_align
 #SBATCH --partition=long
 #SBATCH --cpus-per-task=3 
 #SBATCH --mem=12G
