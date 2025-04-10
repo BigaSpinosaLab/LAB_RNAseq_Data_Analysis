@@ -10,6 +10,13 @@
 # User defined parameters: Select raw or trimmed data
 #=========================
 
+# Root directory
+ROOTDIR=$(sed -n 6p RNAseq_User_defined_parameters.txt)
+# Project name
+PROJECT=$(sed -n 9p RNAseq_User_defined_parameters.txt)
+# Project working directory
+WKD=$ROOTDIR/$(sed -n 12p RNAseq_User_defined_parameters.txt)
+
 # SPECIFY the location to your raw data or trimmed data. 
 # Comment or uncomment the relevant one
 
@@ -22,13 +29,6 @@ DATA=$WKD/'raw_data'
 #=========================
 # General configuration: paths and singularity images binding
 #=========================
-
-# Root directory
-ROOTDIR=$(sed -n 6p RNAseq_User_defined_parameters.txt)
-# Project name
-PROJECT=$(sed -n 9p RNAseq_User_defined_parameters.txt)
-# Project working directory
-WKD=$ROOTDIR/$(sed -n 12p RNAseq_User_defined_parameters.txt)
 
 START=$(date +%s)
 # Enable Singularity image to look into the general path (equivalent to -B)
