@@ -23,7 +23,8 @@
 
 # This script is assuming you are dealing with paired-end data, if this
 # is not the case, you have to adapt the trimming tool execution 
-# (Go to > Execution section). Additionally, check fastq extensions match with your data
+# (Go to > Execution section). Additionally, CHECK fastq extensions match with your data
+# in the STAR execution section
 
 #=========================
 # General configuration: paths and singularity images binding
@@ -45,7 +46,7 @@ DB_PATH=$ROOTDIR"/db_files"
 # Folder where data to be aligned is located (expected 'trimmed_data' or 'raw_data')
 DATA=$WKD'/trimmed_data'
 # Folder where index is stored
-INDEX=$ROOTDIR/$(sed -n 15p User_defined_parameters.txt)
+INDEX=$ROOTDIR/$(sed -n 15p RNAseq_User_defined_parameters.txt)
 # Folder where STAR alignment results will be stored
 OUT=$WKD'/STAR_align/Other_results'
 # Folder where BAM files will be finally stored
