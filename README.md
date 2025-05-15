@@ -1,3 +1,5 @@
+<a href="https://doi.org/10.5281/zenodo.15423088"><img src="https://zenodo.org/badge/948448095.svg" alt="DOI"></a>
+
 # RNA-seq data analysis
 This repository includes scripts for pre-processing RNAseq data to obtain a raw expression matrix from a set of FASTQ files using a splice-aware aligner tool. The final raw expression matrix can be imported into i.e. R for downstream statistical analyisis.
 
